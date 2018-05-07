@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  server:
+    build: docker_server
+#    ports:
+#      - "9922:22"
+    volumes:
+      - ./folders/backups:/backups
+      - ./folders/key_server:/home/borg/.ssh
+
+  client:
+    build: docker_client
+    volumes:
+      - ./folders/cache:/cache
+      - ./folders/config:/config
+      - ./folders/key_client:/root/.ssh
+      - /:/source
+    depends_on:
+      - "server"
+#    stdin_open: true
+#    tty: true
