@@ -19,6 +19,8 @@ docker-compose up
 ```
 Have a look at the "Expected output" further below.
 
+Note: During my test runs, sometimes the `(ssh) client` could not connect to the `server`. If that happens, just hit `ctrl+c` and run `docker-compose up` again.
+
 On my MacBook Pro (17-inch, Early 2011), 8 GByte RAM running High Sierra (10.13.4) it takes roughly more than 15 minutes (maybe even 30) until the system "renders unusable".
 
 I supervised memory usage of the system using the "Activity Monitor". Here's what I noticed:
