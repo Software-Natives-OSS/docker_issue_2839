@@ -14,6 +14,7 @@ Note: Maybe it wouldn't be required to let the client have access to `/` but dur
 ## Reproduce it!
 After cloning this repo, execute:
 ```
+chmod 0600 folders/key_client/id_rsa
 docker-compose up
 ```
 Have a look at the "Expected output" further below.
