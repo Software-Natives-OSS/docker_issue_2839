@@ -5,7 +5,7 @@ export BORG_PASSPHRASE='not_safe'
 
 # Sleeping may not really be required
 echo "DEBUG: sleep a bit..."
-sleep 5
+sleep 30
 
 echo "DEBUG: add server key to known_hosts"
 ssh-keyscan -t rsa -p $PORT $SERVER > ~/.ssh/known_hosts
